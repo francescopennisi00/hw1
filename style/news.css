@@ -1,0 +1,48 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blocco_img {
+    width: 40%;
+}
+
+#blocco_img img {
+    width: 100%;
+}
+
+#blocco_img p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#titolo {
+    font-size: 2rem;
+    Font-family: 'Volkhov', serif;
+    font-weight: bold;
+    padding: 40px;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+}
+
+#text {
+    font-family: Helvetica, Arial, sans-serif;
+    width: 70%;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+
+    #blocco_img {
+        width: 90%;
+    }
+
+    #blocco_img p {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

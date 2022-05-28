@@ -1,0 +1,119 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main header {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main header h3 {
+    font-size: 2.2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+}
+
+main header button {
+    font-size: 1.8rem;
+    border-radius: 10%;
+    color: white;
+    background-color: red;
+    height: 20%;
+    width: 150px;
+}
+
+main header a {
+    height: 50%;
+}
+
+main header a img {
+    height: 100%;
+}
+
+main section {
+    width: 100%;
+}
+
+main section a {
+    font-size: 1.2rem;
+    color: gold;
+}
+
+main section form {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 400px;
+}
+
+@media (max-width: 600px) {
+
+    main header {
+        height: 200px;
+        height: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main header a {
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main header a img {
+        height: 20%;
+    }
+
+    main header h3 {
+        font-size: 1.2rem;
+        font-family: 'Bebas Neue', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        padding: 12px;
+        text-align: center;
+        border-top: 3px solid red;
+        border-bottom: 3px solid red;
+    }
+
+    main header button {
+        font-size: 1rem;
+        border-radius: 10%;
+        color: white;
+        background-color: red;
+        height: 20%;
+        width: 80px;
+    }
+
+    main section a {
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main header a img {
+        height: 50%;
+    }
+}

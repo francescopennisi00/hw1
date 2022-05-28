@@ -1,0 +1,241 @@
+#navbar_user_logout {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    font-size: 25px;
+    background-color: white;;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-bottom: 60px;
+    background-color: black;
+}
+
+#navbar_user_logout div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a.gold {
+    margin-left: 40px;
+    padding: 20px;
+    border-radius: 10%;
+    color: white;
+    background-color: goldenrod;
+    text-decoration: none;  
+}
+
+#button_new_post {
+    margin-right: 40px;
+    padding: 20px;
+    border-radius: 10%;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(245, 14, 14, 0.2);
+}
+
+.post {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid red;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+}
+
+.barra_user_time {
+    font-size: 1.2rem;
+    border: 2px solid gold;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: red;
+}
+
+#main div span img {
+    height: 1.5rem;
+}
+
+.p_post {
+    font-size: 1.4rem;
+    font-family: 'Helvetica','Arial','serif';
+    max-width: 100%;
+}
+
+.likecomments {
+    display: flex;
+    justify-content: right;
+    font-size: 1.5rem;
+}
+
+.likecomments span {
+    margin-left: 20px;
+}
+
+.likecomments em {
+    font-style: normal;
+    cursor: pointer;
+}
+
+.likecomments img {
+    cursor: pointer;
+}
+
+.barra_like_comments {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+a.underline, #user_button {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.elimina {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: gold;
+    cursor: pointer;        
+}
+
+.elenco_commenti, .elenco_like {   
+    text-align: center;
+    margin-top: 3px;
+    border-top: 1px solid black;   
+}
+
+.header_commenti, .header_utenti_like {
+    color: red;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+.elenco_like a {
+    color: goldenrod;
+    display: block;
+}
+
+.header_chiudi_commenti, .header_chiudi_like {
+    font-weight: bold;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.comment_form_container {
+    border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+
+.comment_form_container textarea {
+    width: 90%;
+    height: 50px;
+}
+
+.div_commento {
+    position: relative;
+    font-size: 0.7rem;
+    border-bottom: 1px solid red;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.barra_user_time_comment {
+    font-size: 0.9rem;
+    border: 2px solid gold;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: red;
+}
+
+.p_comment {
+    font-size: 0.9rem;
+    text-align: left;
+    max-width: 100%;
+}
+
+.elimina_com {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: gold;
+    cursor: pointer;        
+}       
+
+
+@media (max-width: 600px) {
+
+    #navbar_user_logout {
+        font-size: 0.8rem;
+    }
+  
+    #navbar_user_logout a, #button_new_post {
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    .post {
+        width: 80%;
+    }
+
+    #main div p {
+        font-size: 1rem;
+    }
+
+    #main div span img {
+        height: 1rem;
+    }
+
+    .barra_user_time {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    #navbar_user_logout div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar_user_logout a, #button_new_post {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    #main div p {
+        font-size: 0.8rem;
+    }
+
+    #main div span img {
+        height: 0.8rem;
+    }
+
+    .barra_user_time {
+        font-size: 0.8rem;
+    }
+
+}

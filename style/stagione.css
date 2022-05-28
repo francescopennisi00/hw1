@@ -1,0 +1,110 @@
+#classifica {              
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#classifica header,
+#classifica div {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid gray;
+    padding: 10px;
+}
+
+#classifica span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+#classifica div span img {
+    height: 30px;
+}
+
+.bloccoPartita {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid red;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.bloccoInfoPartita {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.bloccoRisultato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+}
+
+.bloccoRisultato img {
+    height: 70%;
+}
+
+ @media (max-width: 600px) {
+
+    #classifica {      
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #classifica header,
+    #classifica div {
+        justify-content:space-between;
+        margin: 0;
+    }
+
+    #classifica span {
+        font-size: 0.8rem;
+    }
+
+    .bloccoPartita {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 200px;
+        border-top: 3px solid black;
+        border-bottom: 3px solid red;
+        font-weight: bold;
+        font-size: 0.7rem;
+    }
+    
+    .bloccoInfoPartita {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+    
+    .bloccoRisultato {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 70%;
+    }
+    
+    .bloccoRisultato img {
+        height: 25%;
+    }
+
+ }

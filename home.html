@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <title>MilanWeb24: quotidiano sportivo dedicato al Milan</title>
+        <link rel="stylesheet" href="common_code/common_style.css" />
+        <link rel="stylesheet" href="home.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="home.js" defer></script>
+        <script src="common_code/common_script.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <article>
+            <nav id="links">
+                <a href="home.html">HOME</a> 
+                <a href="stagione.html">STAGIONE</a>  
+                <a href="login.php">COMMUNITY</a>  
+            </nav>
+            <div id="menu" class="hidden">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="menu_view" class="hidden">
+                <a href="home.html">HOME</a>
+                <a href="stagione.html">STAGIONE</a>  
+                <a href="login.php">COMMUNITY</a> 
+                <em>Chiudi menu</em>
+            </div>
+            <header id="upper_header">
+                <div id="spazio_nero"></div>
+                <img src="images/logo_pagina.png" />  
+            </header>
+            <div id="home_comm">
+                <div id="overlay"></div>
+                <p>Accedi alla <a href="login.php">Sezione Community</a> in cui potrai condividere le tue idee con altri tifosi del Milan!</p>
+            </div>
+            <h1>
+                NEWS IN PRIMO PIANO
+            </h1>
+            <section id="main">
+                <!-- qui dentro ci saranno le notizie prelevate dal database all'inizio-->
+            </section>
+            <p id="testo_ricerca">
+                All'interno del riquadro in alto sono contenute solo le notizie piu' recenti...
+                non perderti alcuna notizia con la sezione ricerca!
+            </p>
+            <form name="search">
+                <label>Cerca per <select name="modalita">
+                    <option value="author">Fonte o giornalista</option>
+                    <option value="generic">Ricerca generica</option>
+                </select></label>
+                <input type='text' name='object'>
+                <input type="submit" name="invio" value="Cerca">
+            </form>
+            <span id="errore" class="errore" class="hidden"></span>
+            <h1 id="titolo_ric" class="hidden">
+                RICERCA NEWS
+            </h1>
+            <!-- mostrato solo se il json ritornato ha lunghezza 0 (è vuoto)-->
+            <span id="ric_null" class="errore" class="hidden"></span>
+            <section id="sez_notizie_trovate">
+                <!-- qui dentro ci saranno le notizie prelevate dal database durante la ricerca-->
+            </section>
+            <footer>
+                <img src="images/logo_milan.png">  
+                <p>
+                    Universita' di Catania Web Programming 2022 </br>
+                    Realizzato da Francesco Pennisi
+                </p>
+                <img src="images/nuovo-logo-unict.png">  
+            </footer>
+        </article>
+    </body>
+</html>
